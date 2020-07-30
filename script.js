@@ -22,7 +22,6 @@ window.addEventListener('load', function () {
 	  );
 	
 	  form.addEventListener('submit', function (event) {
-	    event.preventDefault();
 	
 	    // create variables representing corresponding html elements
 	    let pilotName = document.getElementById('pilotName').value;
@@ -74,5 +73,6 @@ window.addEventListener('load', function () {
 	        launchStatus.innerHTML = 'Shuttle not ready for launch';
 	      }
 	    }
+	    event.preventDefault();
 	  });
 	});
